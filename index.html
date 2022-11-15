@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Work | Alara Kalfazade </title>
+        <link rel = "stylesheet" href = "./style-2.css">
+        <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!--<link rel="shortcut icon" type="image/x-icon" href="logo.png"/>-->
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div class="container">
+                <nav class="nav-bar">
+                    <a class="name" href = "./index.html">alara kalfazade</a>
+                    <ul id="menu">
+                        <li><a href="./index.html">work</a></li>
+                        <li><a href="./about.html">about</a></li>
+                        <li><a href="./resume.pdf" target="_blank">resume</a></li>
+                        <i class="fas fa-times" onclick="closenav()"></i>
+                      </ul>
+                      <i class="fas fa-bars" onclick="opennav()"></i>
+                </nav>
+
+                <div class="text">
+                    <h1> Hi there, I'm Alara!</h1> 
+                    <h2> I am from <span class="location"><a href="https://www.google.com/maps/place/%C4%B0stanbul,+T%C3%BCrkiye/@41.0053215,29.0121795,10z/data=!3m1!4b1!4m5!3m4!1s0x14caa7040068086b:0xe1ccfe98bc01b0d0!8m2!3d41.0082376!4d28.9783589" target="_blank">Istanbul, Turkey!</a></span>
+                         I am studying <br>computer science at <span class="school"><a href="https://www.brown.edu/" target="_blank">Brown University</a></span>.</br> I am ambitious about creating 
+                    fun and pleasing experiences.</h2>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!----portfolio/work section-->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Work</h1>
+                <div class="work-list">
+
+                    <a href="./iterative-design.html">
+                        <div class="work">
+                            <img src="./pics/hello-homepage.jpg" alt="iterative design">
+                            <div class="description">
+                                <h3>Iterative Design for Hello</h3>
+                                <p>In this project the task was to design an interactive interface for an emerging startup called Hello, 
+                                    going through the full process of mocking up a solution to the startup's concept. 
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="./about.html">
+                        <div class="work">
+                            <img src="./pics/hello-homepage.jpg" alt="yahoo">
+                            <div class="description">
+                                <h3>Responsive Redesign</h3>
+                                <p>This project connects you to the talented people aound the world.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="./about.html">
+                        <div class="work">
+                            <img src="./pics/hello-homepage.jpg" alt="yahoo">
+                            <div class="description">
+                                <h3>Responsive Redesign</h3>
+                                <p>This project connects you to the talented people aound the world.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="./about.html">
+                        <div class="work">
+                            <img src="./pics/hello-homepage.jpg" alt="yahoo">
+                            <div class="description">
+                                <h3>Responsive Redesign</h3>
+                                <p>This project connects you to the talented people aound the world.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var menu = document.getElementById("menu");
+
+            function opennav(){
+                menu.style.right = "0";
+            }
+            function closenav(){
+                menu.style.right = "-200px";
+            }
+            
+        </script>
+
+    </body>
+
+
+
+
+</html>

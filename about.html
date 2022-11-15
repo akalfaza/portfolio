@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> About | Alara Kalfazade </title>
+        <link rel = "stylesheet" href = "./about.css">
+        <script src="https://kit.fontawesome.com/67e5d0119e.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!--<link rel="shortcut icon" type="image/x-icon" href="logo.png"/>-->
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div class="container-1">
+                <nav>
+                    <a class="name" href = "./index.html">alara kalfazade</a>
+                    <ul id="menu">
+                        <li><a href="./index.html">work</a></li>
+                        <li><a href="./about.html">about</a></li>
+                        <li><a href="./resume.pdf" target="_blank">resume</a></li>
+                        <i class="fas fa-times" onclick="closenav()"></i>
+                      </ul>
+                      <i class="fas fa-bars" onclick="opennav()"></i>
+                </nav>
+            </div>
+        </div>
+
+<!------------------------ABOUT-------------------------------------->
+
+        <div id="about">
+            <div class="container-2">
+
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./pics/IMG-9821.jpg">
+                        <!-- <p>This is me at Castillo de Chapultepec, CDMX, Mexico</p> -->
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I am Alara Kalfazade and I was born and raised in Istanbul, Turkey. After graduating from Saint George's Austrian High School, I moved to the United States to pursue my college education.
+                            Currently, I am a junior studying Computer Science and Economics at Brown University. 
+                        </p>
+                        <p> When I was in high school, I was interested in business and consulting and this led me to pursue internships in these industries. 
+                            This semester, I've developed a passion for UX Design when I started taking a UI/UX course at Brown. This course guided me to pursue my career in UX design. 
+                            My past experiences taught me to work collaboratively, come up with innovative solutions and help people to solve their challenges and 
+                            I believe that I can transfer these skills to UX Design. I am always working to improve my design skills, and keep up with new trends and technologies. 
+                        </p>
+                        <p>In my free time, you can find me dancing to house music by myself, playing the piano, or watching cooking or true crime shows. 
+                            Currently, I am obsessed with Breaking Bad. I also love traveling! If you have suggestions on what I should watch or which country I should see next, reach out!
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('extracurricular activities')">Extracurricular Activities</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX Design</span><br>Sketching, Wireframing, Lo/Hi-fi Prototyping</li>
+                                <li><span>Research</span><br>User Interviewing, A/B Testing</li>
+                                <li><span>Softwares</span><br>Balsamiq, Figma, Adobe Premiere Pro, Excel</li>
+                                <li><span>Programming Languages</span><br>HTML, CSS, JavaScript, Python, C, Java, SQL, x86 Assembly</li>
+                                <li><span>Languages</span><br>Turkish, English, German</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Providence, RI | September 2022 - Present</span><br>Brown University, Undergraduate Teaching Assistant</li>
+                                <li><span>Istanbul, Turkey | June 2022 - August 2022</span><br>Ernst & Young, Business Consulting Summer Intern </li>
+                                <li><span>Istanbul, Turkey | June 2019 - July 2019</span><br>Cekaform Istanbul Plastic Packaging, Export Intern </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="extracurricular activities">
+                            <ul>
+                                <li><span>Providence, RI | September 2021 - Present</span><br>Brown University Women in Business, Associate Member</li>
+                                <li><span>Providence, RI | September 2021 - Sep 2022</span><br>Fashion at Brown Business Committee, Coordinator</li>
+                                <li><span>Istanbul, Turkey | September 2019 - September 2020</span><br>St. George's Austrian School Yearbook Club, Founder and Editor-In-Chief</li>
+                                <li><span>Istanbul, Turkey | September 2016 - September 2020</span><br>St. George's Austrian School Community Service Club, Project Team Leader</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Istanbul, Turkey | 2015-2020</span><br>Saint George's Austrian High School</li>
+                                <li><span>Providence, RI | 2020-2024</span><br>Brown University, A.B. Computer Science-Economics</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            var tablinks= document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var menu = document.getElementById("menu");
+
+            function opennav(){
+                menu.style.right = "0";
+            }
+            function closenav(){
+                menu.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+
+
+
+</html>
