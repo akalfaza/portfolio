@@ -12,7 +12,7 @@ body{
 }
 
 .container-1{
-    padding: 20px 10%;
+    padding: 30px 10%;
 }
 
 nav{
@@ -145,7 +145,8 @@ nav .fas{
 
 .tab-contents ul li span{
     color: blue;
-    font-size:14px;
+    font-size:16px;
+    font-weight: 500;
 }
 
 
